@@ -1,0 +1,6 @@
+#!/bin/sh
+cd /etc/opkg
+rm customfeeds.conf
+wget https://raw.githubusercontent.com/zuzia-dev/Easybox-802-repo-source/cb10526d14fb7ad96d4c013ec75297c309da6dca/Repository/Gargoyle_1.13/customfeeds.conf
+opkg update
+exit 0
